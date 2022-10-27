@@ -6,21 +6,47 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+/* reset start */
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 ul {
   list-style: none;
 }
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0 0 0 0;
+}
+section {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* reset END */
+
 /* --------HEADER---------- */
 .header {
-  background-color: rgb(116, 190, 122);
+  display: flex;
+  align-items: center;
+  /* border: red solid; */
+  height: 80px;
 }
 .logo-link {
   color: #000;
+  margin-right: 93px;
 }
 .logo-part {
   color: var(--change-color);
@@ -32,11 +58,16 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-
-  /* identical to box height */
   letter-spacing: 0.03em;
 }
 .nav-list {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.nav-item {
+  margin-right: 50px;
 }
 .nav-link {
   font-weight: 500;
@@ -44,13 +75,22 @@ ul {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--primary-text);
+  padding: 32px 0;
 }
 .nav-link:focus,
 .nav-link:hover {
   color: var(--change-color);
 }
+.authoriz-link {
+  display: flex;
+  margin-left: auto;
+}
+.authoriz-mail {
+  margin-right: 50px;
+}
 .authoriz-mail,
 .authoriz-tel {
+  padding: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -63,8 +103,20 @@ ul {
 .authoriz-tel:hover {
   color: var(--change-color);
 }
+/* container */
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+}
+
 /* -----------------main------------------ */
 .hero-text {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -75,19 +127,41 @@ ul {
   color: #ffffff;
 }
 .hero {
-  background-color: gray;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #2f303a;
+  text-align: center;
 }
 .hero-btn {
+  display: inline-block;
+  align-items: center;
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
-  background-color: #2196f3;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.preference {
+  padding-top: 94px;
 }
 .preference-text h3 {
   font-weight: 700;
@@ -107,20 +181,30 @@ ul {
 .preference h2 {
   color: initial;
 }
+.preference > ul {
+  display: flex;
+}
 .team h2,
 .work h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--primary-text);
+}
+.work > ul {
+  display: flex;
+}
+.team-list {
+  display: flex;
 }
 .team-item h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
-
+  text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--primary-text);
@@ -135,7 +219,7 @@ ul {
   color: var(--secondary-text);
 }
 footer {
-  background-color: rgb(185, 126, 126);
+  background-color: #2f303a;
 }
 footer > .logo-link {
   color: #fff;
@@ -166,7 +250,17 @@ footer .authoriz-tel {
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   cursor: pointer;
+  background: #f5f4fa;
+  border-radius: 4px;
   color: var(--primary-text);
+}
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+.portfolio > ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -187,4 +281,8 @@ footer .authoriz-tel {
   letter-spacing: 0.03em;
 
   color: var(--secondary-text);
+}
+/* carent page */
+.current {
+  color: var(--change-color);
 }

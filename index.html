@@ -5,41 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <!-- normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-    <header class="header">
-      <a href="" class="logo-link link"><span class="logo-part">Web</span>Studio</a>
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item list"><a href="./" class="nav-link link">Студія</a></li>
-          <li class="nav-item list"><a href="./portfolio.html" class="nav-link link">Портфоліо</a></li>
-          <li class="nav-item list"><a href="" class="nav-link link">Контакти</a></li>
+    <div class="container">
+      <header class="header">
+        <a href="./" class="logo-link link"><span class="logo-part">Web</span>Studio</a>
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item list"><a href="./" class="nav-link link current">Студія</a></li>
+            <li class="nav-item list"><a href="./portfolio.html" class="nav-link link">Портфоліо</a></li>
+            <li class="nav-item list"><a href="" class="nav-link link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="authoriz-link">
+          <li class="authoriz-item list">
+            <a href="mailto:info@devstudio.com" class="authoriz-mail link">info@devstudio.com</a>
+          </li>
+          <li class="authoriz-item list">
+            <a href="tel:+380961111111" class="authoriz-tel link">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="authoriz-link">
-        <li class="authoriz-item list">
-          <a href="mailto:info@devstudio.com" class="authoriz-mail link">info@devstudio.com</a>
-        </li>
-        <li class="authoriz-item list"><a href="tel:+380961111111" class="authoriz-tel link">+38 096 111 11 11</a></li>
-      </ul>
-    </header>
+      </header>
+    </div>
 
     <main>
       <section class="hero">
-        <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-btn">Замовити послугу</button>
-        <!-- <a href="">Замовити послугу</a> -->
+        <div class="container">
+          <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero-btn">Замовити послугу</button>
+          <!-- <a href="">Замовити послугу</a> -->
+        </div>
       </section>
-      <section class="preference">
-        <h2>Наші переваги</h2>
+      <section class="preference container">
+        <h2 class="visually-hidden">Наші переваги</h2>
         <ul>
           <li class="preference-text">
             <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -60,7 +76,7 @@
         </ul>
       </section>
 
-      <section class="work">
+      <section class="work container">
         <h2>Чим ми займаємося</h2>
         <ul>
           <li>
@@ -75,7 +91,7 @@
         </ul>
       </section>
 
-      <section class="team">
+      <section class="team container">
         <h2>Наша команда</h2>
         <ul class="team-list">
           <li class="team-item">
@@ -103,12 +119,20 @@
     </main>
 
     <footer>
-      <a href="" class="logo-link link"><span class="logo-part">Web</span>Studio</a>
-      <address class="footer">
-        <span class="footer-adress">м. Київ, пр-т Лесі Українки, 26</span><br />
-        <a href="mailto:info@devstudio.com" class="authoriz-mail link">info@devstudio.com</a><br />
-        <a href="tel:+380961111111" class="authoriz-tel link">+38 096 111 11 11</a>
-      </address>
+      <div class="container">
+        <a href="" class="logo-link link"><span class="logo-part">Web</span>Studio</a>
+        <address class="footer">
+          <a
+            href="https://goo.gl/maps/qrhuLcH9iDoWpVt69"
+            class="link"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            ><span class="footer-adress">м. Київ, пр-т Лесі Українки, 26</span><br
+          /></a>
+          <a href="mailto:info@devstudio.com" class="authoriz-mail link">info@devstudio.com</a><br />
+          <a href="tel:+380961111111" class="authoriz-tel link">+38 096 111 11 11</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
