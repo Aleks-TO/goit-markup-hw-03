@@ -1,0 +1,190 @@
+:root {
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --change-color: #2196f3;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+ul {
+  list-style: none;
+}
+/* --------HEADER---------- */
+.header {
+  background-color: rgb(116, 190, 122);
+}
+.logo-link {
+  color: #000;
+}
+.logo-part {
+  color: var(--change-color);
+}
+.logo-link,
+.logo-part {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+
+  /* identical to box height */
+  letter-spacing: 0.03em;
+}
+.nav-list {
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--primary-text);
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--change-color);
+}
+.authoriz-mail,
+.authoriz-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--secondary-text);
+}
+.authoriz-mail:focus,
+.authoriz-mail:hover,
+.authoriz-tel:focus,
+.authoriz-tel:hover {
+  color: var(--change-color);
+}
+/* -----------------main------------------ */
+.hero-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.hero {
+  background-color: gray;
+}
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #2196f3;
+}
+.preference-text h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+}
+.preference-text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text);
+}
+.preference h2 {
+  color: initial;
+}
+.team h2,
+.work h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text);
+}
+.team-item h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text);
+}
+.team-item span {
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: calc(19 / 16);
+
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text);
+}
+footer {
+  background-color: rgb(185, 126, 126);
+}
+footer > .logo-link {
+  color: #fff;
+}
+.footer-adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+footer .authoriz-mail,
+footer .authoriz-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ------portfolio.html------ */
+.portfolio-btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--primary-text);
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--change-color);
+}
+.portfolio-list h2 {
+  /* font-weight: 700; */
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+
+  color: var(--primary-text);
+}
+.portfolio-list p {
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text);
+}
