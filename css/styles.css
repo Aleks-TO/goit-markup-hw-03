@@ -269,8 +269,8 @@ body {
   margin-bottom: 30px;
 }
 .team-item {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
-  border-radius: 5px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-text {
@@ -351,6 +351,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text);
   background: #f5f4fa;
+  border-color: transparent;
   border-radius: 4px;
 }
 .portfolio-btn:hover,
@@ -362,10 +363,11 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
 }
 .portfolio-item {
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.137);
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 .portfolio-subtitle {
   font-weight: 700;
