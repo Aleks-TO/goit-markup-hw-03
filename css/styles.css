@@ -48,7 +48,7 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px double pink;
+  /* outline: 2px double pink; */
 }
 /* ------HEADER----- */
 .heder-container {
@@ -265,6 +265,10 @@ body {
 .team-item > img {
   margin-bottom: 30px;
 }
+.team-item {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
+  border-radius: 5px;
+}
 
 .team-text {
   display: block;
@@ -323,14 +327,20 @@ body {
 
 /* ------PORTFOLIO----- */
 .portfolio {
+  padding: 94px 0;
 }
 .portfolio-title {
 }
 .portfolio-btn-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 50px;
 }
 .portfolio-btn-item {
 }
 .portfolio-btn {
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -347,6 +357,12 @@ body {
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio-item {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.137);
 }
 .portfolio-subtitle {
   font-weight: 700;
