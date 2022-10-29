@@ -224,7 +224,7 @@ body {
 .footer {
   background-color: var(--bg-dark-color);
 }
-.footer.logo-link {
+.footer .logo-link {
   color: var(--light-text);
 }
 .link {
